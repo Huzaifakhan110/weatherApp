@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <h2>PAK weather-app</h2>
+   
+   
+        <a href="/signIn.html">User</a>
+    </nav>
+
+<div class="card">
+  <img src="partly_cloud.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4>Karachi, PK</h4>
+        <p>Partly Cloudy</p>
+        <p><strong>wind speed </strong>4.5 m/s</p>
+        <p><strong>Humidity </strong>64%</p>
+        <h1>14°C</h1>
+  </div>
+</div>
+<br>
+<div>
+    <button id="logout" type="button" style="margin-left: 120px;" >Logout</button> 
+</div>
+<script type="text/javascript">
+    document.getElementById("logout").onclick = function () {
+        location.href = "signIn.html";
+    };
+</script>
+</body>
+</html> 
